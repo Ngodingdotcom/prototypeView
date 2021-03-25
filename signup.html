@@ -1,20 +1,3 @@
-<?php
-  include 'includes/autoloader.inc.php';
-  if(isset($_POST["submit"]))
-  {
-    $username = $_POST["username"];
-    $password = $_POST["password"];
-    $nickname = $_POST["nickname"];
-    $firstname = $_POST["firstname"];
-    $lastname = $_POST["lastname"];
-
-    $insert = new control();
-    $result = $insert->register(8, $username, $password);
-    $result2 = $insert->register2(8, $firstname, $lastname, $nickname);
-
-    var_dump($result);
-  }
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,12 +6,12 @@
   <script src="https://kit.fontawesome.com/ca602dea7a.js" crossorigin="anonymous"></script>
   <title>E-Learning Project</title>
   <!-- Tailwind CSS -->
-  <link rel="stylesheet" href="../prototype/css/style.css">
+  <link rel="stylesheet" href="../prototypeView/css/style.css">
   <!-- Style Css -->
-  <link rel="stylesheet" type="text/css" href="../prototype/css/style2.css">
-  <link rel="stylesheet" type="text/css" href="../prototype/css/styleform.css">
+  <link rel="stylesheet" type="text/css" href="../prototypeView/css/style2.css">
+  <link rel="stylesheet" type="text/css" href="../prototypeView/css/styleform.css">
   <!-- Icon -->
-  <link rel="shortcut icon" href="../prototype/assets/logo.jpeg">  
+  <link rel="shortcut icon" href="../prototypeView/assets/logo.jpeg">  
 </head>
 <body>
     <header class="text-gray-600 body-font bg-gray-100">
@@ -112,7 +95,7 @@
     </section>
     
   <!-- Javascript -->
-  <script src="../prototype/js/script.js"></script>
+  <script src="../prototypeView/js/script.js"></script>
       
   <!-- <a href="https://www.freepik.com/vectors/background">Background vector created by freepik - www.freepik.com</a> -->
 </body>
